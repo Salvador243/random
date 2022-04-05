@@ -91,7 +91,7 @@
                 <input type="text" class="form-control">
             </div>
             <div class="col-12 mt-4">
-                <button class="btn btn-success" type="submit">Guardar</button>
+                <button class="btn btn-primary" type="submit">Guardar</button>
             </div>
         </div>
     </form>

@@ -4,15 +4,36 @@
     Author     : salva
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@include file="../template_header.jsp" %>
 
 <div class="container">
     <table>
-        <theader>
-            
-        </theader>
+        <tr>
+            <th>N&uacute;mero de cliente</th>
+            <th>N&uacute;mero de cuenta</th>
+            <th>Tipo de cuenta</th>
+            <th>Fecha</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Editar</th>
+            <th>Borrar</th>
+        </tr>
+            <c:forEach  items="${requestScope.lista}" var="x">
+                <tr>
+                    <td>${x.numero_cliente}</td>   
+                    <td>${x.nombre}</td>
+                    <td>${x.apellidos}</td>
+                    <td>${x.pais}</td>
+                </tr>
+        </c:forEach >
+        
+        <c:if test="${lista == null}">
+            <p>text</p>
+        </c:if>
     </table>
+
 </div>
 
 </body>

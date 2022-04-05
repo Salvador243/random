@@ -12,6 +12,7 @@
   </head>
   <body>
     <h3>texto</h3>
-    <a href="Clientes/Alta.jsp">alta</a>
+    <a href="guardar_clientes">alta</a>
+    <a href="lista_clientes">Lista</a>
   </body>
 </html>

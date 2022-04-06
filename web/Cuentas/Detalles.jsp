@@ -5,6 +5,7 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@include file="../template_header.jsp" %>
         <div class="container">
                 <div class="row">
@@ -20,12 +21,12 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><a href="#">Cuenta|---MXN-**894</a></td>
-                                    <td>$ 1,011.92</td>
+                                    <td><a href="#">Cuenta---MXN-**<c:out value="${sessionScope.cuenta.numero_cuenta}"/></a></td>
+                                    <td>$ <c:out value="${sessionScope.cuenta.monto}"/> </td>
                                 </tr>
                                 <tr>
                                     <td><strong>Total</strong></td>
-                                    <td>$ 1,011.92</td>
+                                    <td>$ <c:out value="${sessionScope.cuenta.monto}"/></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -41,7 +42,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><a href="#">Cuenta|---MXN-**185</a></td>
+                                    <td><a href="#">Cuenta---MXN-**185</a></td>
                                     <td>$ -3,242.24</td>
                                 </tr>
                                 <tr>

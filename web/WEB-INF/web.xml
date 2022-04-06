@@ -8,6 +8,14 @@
         <servlet-name>guardar_clientes</servlet-name>
         <servlet-class>Cliente.guardar_clientes</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>detalles_cliente</servlet-name>
+        <servlet-class>Cliente.detalles_cliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Update</servlet-name>
+        <servlet-class>Update</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>lista_clientes</servlet-name>
         <url-pattern>/lista_clientes</url-pattern>
@@ -15,6 +23,14 @@
     <servlet-mapping>
         <servlet-name>guardar_clientes</servlet-name>
         <url-pattern>/guardar_clientes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>detalles_cliente</servlet-name>
+        <url-pattern>/detalles_cliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Update</servlet-name>
+        <url-pattern>/Update</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

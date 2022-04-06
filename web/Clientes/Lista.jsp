@@ -20,18 +20,14 @@
             <th>Editar</th>
             <th>Borrar</th>
         </tr>
-            <c:forEach  items="${requestScope.lista}" var="x">
+            <c:forEach  items="${sessionScope.lista}" var="x">
                 <tr>
                     <td>${x.numero_cliente}</td>   
                     <td>${x.nombre}</td>
                     <td>${x.apellidos}</td>
                     <td>${x.pais}</td>
                 </tr>
-        </c:forEach >
-        
-        <c:if test="${lista == null}">
-            <p>text</p>
-        </c:if>
+            </c:forEach>
     </table>
 
 </div>

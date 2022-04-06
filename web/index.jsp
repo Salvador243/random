@@ -5,8 +5,10 @@
   Time: 8:27 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="../template_header.jsp" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <html>
     <head>
         <title>Evidencia</title>
@@ -49,16 +51,11 @@
                                     <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z"/>
                                 </svg>
                                 Iniciar Sesi&oacute;n
-
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="guardar_clientes">alta</a>
-            <a href="lista_clientes">Lista</a>
-            <a href="detalles_cliente">Detalles cliente</a>
-
         </form>
     </div>
 </body>

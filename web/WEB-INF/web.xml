@@ -20,6 +20,10 @@
         <servlet-name>Login</servlet-name>
         <servlet-class>Login</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AltaCuentas</servlet-name>
+        <servlet-class>AltaCuentas</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>lista_clientes</servlet-name>
         <url-pattern>/lista_clientes</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AltaCuentas</servlet-name>
+        <url-pattern>/AltaCuentas</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

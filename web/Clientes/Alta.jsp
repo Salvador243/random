@@ -64,13 +64,13 @@
                 <label>E-mail:</label>
             </div>
             <div class="col-8">
-                <input type="text" class="form-control" name="email">
+                <input type="email" class="form-control" name="email">
             </div>
             <div class="col-4">
                 <label>Fecha de nacimiento:</label>
             </div>
             <div class="col-8">
-                <input type="text" class="form-control" name="fecha_nacimiento">
+                <input type="date" class="form-control" name="fecha_nacimiento">
             </div>
             <div class="col-4">
                 <label>Numero de cliente:</label>
@@ -94,7 +94,7 @@
                 <button class="btn btn-primary" type="submit">Guardar</button>
             </div>
         </div>
-    </form>
+    </form>  
 </div>
 </body>
 </html>

@@ -14,31 +14,31 @@
                         <label>Nombre de cliente:</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="cliente">
                     </div>
                     <div class="col-4">
                         <label>Numero de cuenta:</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="cuenta">
                     </div>
                     <div class="col-4">
                         <label>Tipo de cuenta:</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="tipo">
                     </div>
                     <div class="col-4">
                         <label>Monto:</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="monto">
                     </div>
                     <div class="col-4">
                         <label>Fecha:</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" class="form-control">
+                        <input type="date" class="form-control" name="fecha">
                     </div>
                     <div class="offset-11 col-1 mt-4">
                         <button class="btn btn-primary" type="submit">Guardar</button>

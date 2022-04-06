@@ -8,15 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="../template_header.jsp" %>
 <html>
-  <head>
-    <title>Evidencia</title>
-  </head>
-  <body>
-    <h3>texto</h3>
-    <a href="guardar_clientes">alta</a>
-    <a href="lista_clientes">Lista</a>
-    <a href="detalles_cliente">Detalles cliente</a>
-  </body>
+    <head>
+        <title>Evidencia</title>
 </html>
 <body>
     <div class="container">

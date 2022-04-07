@@ -5,6 +5,7 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -72,11 +73,26 @@ public class Login extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
-            HttpSession log = request.getSession(true);
-            log.setAttribute("user", request.getParameter("email"));
-            log.setAttribute("navbar", "1");
-            RequestDispatcher view = request.getRequestDispatcher("Cuentas/Detalles.jsp");
-            view.forward(request, response);
+            String usuario = request.getParameter("user");
+            String password = request.getParameter("password");
+            Usuario user = new Usuario();
+            
+            ArrayList <Usuario> usuarios = new ArrayList <> ();
+            usuarios = (ArrayList<Usuario>) user.getUsuarios();
+            
+            for( Usuario x : usuarios){
+                if(x.getNombre().equals(usuario) && x.getPassword().equals(password)){
+                    HttpSession log = request.getSession(true);
+                    if(x.getRol().equals("Admin")){
+                        log.setAttribute("rol", "Admin");
+                    }
+                    log.setAttribute("user", request.getParameter("email"));
+                    log.setAttribute("navbar", "1");
+                    RequestDispatcher view = request.getRequestDispatcher("Cuentas/Detalles.jsp");
+                    view.forward(request, response);
+                }
+            }
+            response.sendRedirect("/TareaRandom");
         } catch (IOException | ServletException e) {
             PrintWriter pw = response.getWriter();
             pw.println("<h1>ERROR LOGIN SERVELTt</h1>");

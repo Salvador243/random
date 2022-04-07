@@ -11,7 +11,6 @@
     <title>Evidencia</title>
   </head>
   <body>
-    <h3>texto</h3>
     <a href="guardar_clientes">Alta</a>
     <a href="lista_clientes">Lista</a>
     <a href="detalles_cliente">Detalles cliente</a>

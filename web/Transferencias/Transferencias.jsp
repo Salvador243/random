@@ -16,13 +16,13 @@
                         <label>Cuenta retiro</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" class="form-control" name="numero_cliente" required>
+                        <input type="text" class="form-control" name="cuenta_retiro" required>
                     </div>
                     <div class="col-4">
                         <label>Cuenta deposito</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" class="form-control" name="numero_cuenta" required>
+                        <input type="text" class="form-control" name="cuenta_deposito" required>
                     </div>
                     <div class="col-4">
                         <label>Importe MXN</label>

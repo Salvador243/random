@@ -10,7 +10,7 @@
 
 <div class="container mt-5">
     <div class="row">
-        <table class="table table-success table-striped">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th></th>

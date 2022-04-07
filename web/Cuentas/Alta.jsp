@@ -14,7 +14,7 @@
                         <label>Numero de cliente:</label>
                     </div>
                     <div class="col-8">
-                        <input type="text" class="form-control" name="nombre_cliente" required>
+                        <input type="text" class="form-control" name="numero_cliente" required>
                     </div>
                     <div class="col-4">
                         <label>Numero de cuenta:</label>
